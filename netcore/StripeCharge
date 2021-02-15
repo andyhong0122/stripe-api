@@ -1,0 +1,19 @@
+using Models.Domain.Provider;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Models.Domain
+{
+    public class StripeCharge
+    {
+        public int Id { get; set; }
+        public string CustomerId { get; set; }
+        public string ChargeId { get; set; }
+        public string ReceiptId { get; set; }
+        public string ReceiptUrl { get; set; }
+        public int CreatedBy { get; set; }
+        public int ProviderId { get; set; }
+        public DateTime DateCreated { get; set; }
+    }
+}
